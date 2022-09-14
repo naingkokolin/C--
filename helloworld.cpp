@@ -1,16 +1,18 @@
 #include <iostream>
+#include <cmath>
 
 int main()
 {
-    auto var1{12};
-    auto var2{24.0};
-    auto var3{23.0f};
-    auto var4{23.0l};
-    auto var5{"e"};
+    short int var1{10};
+    short int var2{20};
 
-    std::cout << "hello world!" << std::endl;
-    std::cout << std::showpoint;
-    std::cout << var1 << std::endl;
+    std::cout << "size of var1 : " << sizeof(var1) << std::endl;
+    std::cout << "size of var2 : " << sizeof(var2) << std::endl;
+
+    auto var = var1 + var2;
+    std::cout << "size of var : " << sizeof(var) << std::endl;
 
     return 0;
 }
+
+// * In day 2, I learned output formatting, numeric limits, math functions.
