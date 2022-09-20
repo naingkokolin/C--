@@ -1,32 +1,32 @@
 #include <iostream>
 #include <iomanip>
 
+const int phone{10};
+const int laptop{1};
+
 int main()
 {
-    std::string firstName = "naing ko";
-    std::string lastName = "ko lin";
-    int age{21};
+    int point{phone};
 
-    std::string firstName1 = "hsu phyu";
-    std::string lastName1 = "sin";
-    int age1{21};
+    switch (point)
+    {
+    case phone:
+    {
+        std::cout << "The case is phone" << std::endl;
+    }
+    break;
 
-    std::string firstName2 = "ko koe";
-    std::string lastName2 = "baby";
-    int age2{21};
+    case laptop:
+    {
+        std::cout << "The case is laptop" << std::endl;
+    }
 
-    std::cout << std::setw(10) << std::left << "First Name" << std::setw(10) << std::left << "Last Name " << std::setw(5) << std::left << "Age" << std::endl;
-    std::cout << std::setw(10) << std::left << firstName << std::setw(10) << std::left << lastName << std::setw(5) << std::left << age << std::endl;
-
-    bool isTrue{true};
-
-    std::cout << "It is true or false in boolalpha : " << std::boolalpha << isTrue << std::endl;
-    std::cout << "It is true or false in noboolalpha : " << std::noboolalpha << isTrue << std::endl;
-    std::cout << "-----------------------------------------------------------------------" << std::endl;
-
-    unsigned int num1{10};
-
-    std::cout << std::showpos << num1 << std::endl;
+    default:
+    {
+        std::cout << "The case is default" << std::endl;
+    }
+    break;
+    }
 
     return 0;
 }
