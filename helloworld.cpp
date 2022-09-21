@@ -1,34 +1,14 @@
 #include <iostream>
-#include <iomanip>
 
 const int phone{10};
 const int laptop{1};
 
 int main()
 {
-    int point{phone};
-
-    switch (point)
+    for (unsigned int i{}; i < 10; i++)
     {
-    case phone:
-    {
-        std::cout << "The case is phone" << std::endl;
-    }
-    break;
-
-    case laptop:
-    {
-        std::cout << "The case is laptop" << std::endl;
-    }
-
-    default:
-    {
-        std::cout << "The case is default" << std::endl;
-    }
-    break;
+        std::cout << i + 1 << ". i love programming" << std::endl;
     }
 
     return 0;
 }
-
-// * In day 2, I learned output formatting, numeric limits, math functions.
