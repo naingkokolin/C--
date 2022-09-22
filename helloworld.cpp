@@ -1,13 +1,14 @@
 #include <iostream>
+#include <iomanip>
 
 const int phone{10};
 const int laptop{1};
 
 int main()
 {
-    for (unsigned int i{}; i < 10; i++)
+    for (int i = 1; i <= 1000; i++)
     {
-        std::cout << i + 1 << ". i love programming" << std::endl;
+        std::cout << std::setw(5) << i << ". arr bwrrr" << std::endl;
     }
 
     return 0;
