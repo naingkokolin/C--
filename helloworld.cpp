@@ -1,14 +1,16 @@
 #include <iostream>
 #include <iomanip>
 
-const int phone{10};
-const int laptop{1};
+using namespace std;
 
 int main()
 {
-    for (int i = 1; i <= 1000; i++)
+    bool isRunning = true;
+    int count = 0;
+    while (isRunning && count < 10)
     {
-        std::cout << std::setw(5) << i << ". arr bwrrr" << std::endl;
+        cout << "Fighting" << endl;
+        count++;
     }
 
     return 0;
