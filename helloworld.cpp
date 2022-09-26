@@ -5,13 +5,14 @@ using namespace std;
 
 int main()
 {
-    bool isRunning = true;
-    int count = 0;
-    while (isRunning && count < 10)
+    size_t i{}; // iterator declaration
+
+    while (i < 10)
     {
-        cout << "Fighting" << endl;
-        count++;
+        cout << i << ". I love programming" << endl;
+        i++;
     }
+    cout << "Loop end!=" << endl;
 
     return 0;
 }
