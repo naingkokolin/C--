@@ -1,18 +1,34 @@
 #include <iostream>
 #include <iomanip>
-
+#include <stdio.h>
 using namespace std;
 
 int main()
 {
-    size_t i{}; // iterator declaration
+    int nums[10];
+    int array[10];
 
-    while (i < 10)
+    cout << "Enter ten numbers : " << endl;
+    for (size_t i{0}; i < 10; i++)
     {
-        cout << i << ". I love programming" << endl;
-        i++;
+        cin >> nums[i];
     }
-    cout << "Loop end!=" << endl;
+    cout << "*****************************" << endl;
+
+    // sorting numbers
+    int max = nums[0];
+    for (size_t i = 0; i < 10; i++)
+    {
+        if (nums[i] > max)
+        {
+            max = nums[i];
+        }
+    }
+
+    for (size_t i{0}; i < 10; i++)
+    {
+        cout << nums[i] << endl;
+    }
 
     return 0;
 }
